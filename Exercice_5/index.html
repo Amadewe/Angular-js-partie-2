@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html ng-app="schoolApp" lang="fr" dir="ltr">
+<html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8" />
     <title>Exercice 5</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
     <script src="script.js"></script>
   </head>
-  <body ng-controller="studentsCtrl">
+  <body ng-app="schoolApp" ng-controller="studentsCtrl">
     <!-- afficher toutes les variables dans une phrase. -->
     <div>
-      {{firstName + " " + lastName + " à " + age  + " ans, et elle est en " + grade}}
+      Je m'appelle {{ firstName }} {{lastName }}, j'ai {{ age }} ans et je suis en {{ grade }}.<br> <!-- On place les variables firstName et lastName dans deux paires d'accolades distinctes afin de pouvoir "jouer" avec des filtres si besoin (exemple : si on veut mettre le prénom en gras et pas le nom)-->
+    <!--  Autre méthode : {{'Je m\'appelle ' + firstName + ' ' + lastName + ', j\'ai ' + age + ' ans' + ' et je suis en ' + grade}} --> <!-- méthode adaptée si phrase courte // penser à ajouter un ' ' pour ajouter un espace -->
     </div>
 </body>
 </html>

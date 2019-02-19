@@ -7,9 +7,11 @@
     <script src="script.js"></script>
   </head>
   <body ng-controller="studentsCtrl">
-      <div>
-{{firstName}}
+      <div>{{ firstName }}</div>
       <!--  afficher la variable firstName dans la div. -->
-    </div>
+      <!-- 1ere version avec l'expression {{}} -->
+      <!-- 2eme version ng-bind pour lastName-->
+      <p ng-bind="lastName"> </p>
+
 </body>
 </html>

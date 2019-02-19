@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html ng-app="schoolApp" lang="fr" dir="ltr">
+<html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8" />
     <title>Exercice 2</title>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.7/angular.min.js"></script>
     <script src="script.js"></script>
   </head>
-  <body ng-controller="studentsCtrl">
+  <body ng-app="schoolApp" ng-controller="studentsCtrl">
     <!-- afficher toutes les variables. -->
+    <!-- version 1 -->
     <div>
-        {{firstName}}
-        {{lastName}}
-        {{age}}
-        {{grade}}
+        {{ firstName }}
+        {{ lastName }}
+        {{ age }}
+        {{ grade }}
     </div>
+    <!-- version 2 avec du html directement -->
+    <div> je m'appelle {{ firstName }}, j'ai {{ age }} </div>
+    <!-- version 3 correction de l'exo 3  (les " " pour faire des espaces )-->
+    {{firstName + ' ' + lastName + ' ' + age  + ' ' + grade}}
 </body>
 </html>
